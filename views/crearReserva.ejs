@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+
+    <div class="container">
+        <h1>Crear una reserva</h1>
+
+        <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido">
+            </div>
+            <div class="mb-3">
+              <label for="origen" class="form-label">Origen</label>
+              <input type="text" class="form-control" id="origen">
+            </div>
+            <div class="mb-3">
+              <label for="destino" class="form-label">Destino</label>
+              <input type="text" class="form-control" id="destino">
+            </div>
+            <div class="mb-3">
+              <label for="fechaPartida" class="form-label">Fecha de partida</label>
+              <input type="date" class="form-control" id="fechaPartida">
+            </div>
+            <div class="mb-3">
+              <label for="codigoReserva" class="form-label">Codigo de Reserva</label>
+              <input type="number" class="form-control" id="codigoReserva">
+            </div>
+            <div class="mb-3">
+              <label for="costoReserva" class="form-label">Costo de la Reserva</label>
+              <input type="number" class="form-control" id="costoReserva">
+            </div>
+
+    
+            <button type="submit" class="btn btn-primary">Reservar</button>
+          </form>
+
+    </div>
+
+<%- include('partials/footer') %>

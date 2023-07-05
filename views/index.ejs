@@ -6,19 +6,24 @@
             <h1 class="text-center border-botton">Lista de Reservas</h1>
             <div class="col">
                 <div class="col-md-3 mb-2">
-                    <a href="/reserva/crear" class="btn btn sm btn-primary" id>Nuevo </a>
+                    <a href="/reservas/crear" class="btn btn sm btn-primary" id>Nuevo </a>
                     <a href="/" class="btn btn-info text-light">Inicio</a>
                 </div>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Columna 1</th>
-                            <th>Columna 2</th>
-                            <th>Columna 3</th>
-                            <th>Columna n</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Origen</th>
+                            <th>Destino</th>
+                            <th>Fecha de solicitud</th>
+                            <th>Fecha de partida</th>
+                            <th>Codigo de reserva</th>
+                            <th>Costo de la reserva</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
-                    <tbody id="">
+                    <tbody id="body">
           
                     </tbody>
                 </table>
@@ -27,4 +32,6 @@
     </div>
 
 
-    <%- include('partials/footer') %>
+    <script src="/js/obtenerReservas.js"></script>
+
+<%- include('partials/footer') %>
