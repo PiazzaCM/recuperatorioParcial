@@ -26,7 +26,7 @@ const Reserva = sequelize.define('reserva', {
     fechaSolicitud: {
         type: DataTypes.STRING,
         require: true,
-        default: new Date().toLocaleDateString('es', { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' })
+        defaultValue: new Date().toLocaleDateString('es', { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' })
     },
     fechaSolicitada: {
         type: DataTypes.STRING,
@@ -36,9 +36,13 @@ const Reserva = sequelize.define('reserva', {
         type: DataTypes.INTEGER,
         require: true
     },
+    costoReserva: {
+        type: DataTypes.INTEGER,
+        require: true
+    },
     estado: {
         type: DataTypes.BOOLEAN,
-        default: true
+        defaultValue: true
     }
 });
 
