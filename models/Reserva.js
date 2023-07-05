@@ -15,6 +15,14 @@ const Reserva = sequelize.define('reserva', {
         type: DataTypes.STRING,
         require: true
     },
+    origen: {
+        type: DataTypes.STRING,
+        require: true
+    },
+    destino: {
+        type: DataTypes.STRING,
+        require: true
+    },
     fechaSolicitud: {
         type: DataTypes.STRING,
         require: true,
@@ -27,6 +35,10 @@ const Reserva = sequelize.define('reserva', {
     codigoReserva: {
         type: DataTypes.INTEGER,
         require: true
+    },
+    estado: {
+        type: DataTypes.BOOLEAN,
+        default: true
     }
 });
 
