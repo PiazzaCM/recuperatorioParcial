@@ -1,7 +1,7 @@
 <%- include('partials/header') %>
     <div class="container">
         <h1>Editar una reserva</h1>
-            <form>
+            <form data-id="<%= id %>">
                 <div class="mb-3">
                   <label for="nombre" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="nombre">
@@ -37,5 +37,6 @@
     
     </div>
 
+    <script src="/js/editarReserva.js"></script>
 
 <%- include('partials/footer') %>
